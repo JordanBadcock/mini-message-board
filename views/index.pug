@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  <form action="/new">
+    input(type="submit", value="New Message")
+    ul 
+    each message in messages
+      h1= message.user
+      p= message.text 
+      p= message.added 
+  </form>
+  

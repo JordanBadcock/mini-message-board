@@ -1,0 +1,14 @@
+extends layout 
+
+block content
+  <form action="/new" method="POST">
+    h1= title   
+      br
+      label(for="name") Name:
+      input(type="text" id="name" name="name")
+      br  
+      label(for="message") Message:
+      textarea(id="message" name="message")
+      br
+      input(type="submit" value="Submit")
+  </form>
